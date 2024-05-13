@@ -1,0 +1,45 @@
+.container{
+    background-color: beige;
+    /* vh: 뷰포트 단위라 탭 줄어들면 같이 줄어듦 */
+    height: 100vh;
+
+    /* 컨테이너 박스를 flex box로 만들기 */
+    display: flex;
+    /* flex-dirextion: 기준축 정의, row: 가로, column: 세로, -reverse: 거꾸로 */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: 중심축에서 아이템의 배치를 담당 */
+    /* justify-content: space-around; */
+}
+
+/* .container{
+    background-color: beige;
+    height: 50%;    
+} */
+
+/* body{
+    background-color: beige;
+    height: 50%;    
+    body: html 자식이라 height 안먹음, 실질적으로 html의 크기까지 지정해줘야 사용 가능
+} */
+
+/* 컨테이너 박스를 flex box 맏ㄴ들기
+첫번째 display 속성에 flex 속성값을 적용
+두번째 flex-dirextion 속성에 기준측 적용  */
+
+.item{
+    width: 100vw;
+    height: 4vh;
+    line-height: 4vh;
+    color: white;
+    font-weight: bold;
+    text-align: center; 
+    border: 0.3vh solid white;
+    font-size: 1.8vh;
+}
+
+.item1{background-color: red;}
+.item2{background-color: orange;}
+.item3{background-color: green;}
+.item4{background-color: blue;}
+.item5{background-color: purple;}

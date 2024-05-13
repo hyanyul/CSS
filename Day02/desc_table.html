@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desc_table</title>
+    <style>
+        table > tbody > tr > th{
+            color: blue;
+            /* table 태그와 tr 태그 사이에 tbody라는 태그가 생겨서 table > tr > th 적으면 못찾음 */
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>이름</th>
+            <th>지역</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>부산 남구 용호동</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!--
+    <table> 태그는 주의해서 사용
+    개발자 모드에서 확인하면 <table> 태그에 <tbody> 태그가 자동으로 추가됨
+    따라서 table > tbody > tr > th 로 접근해야 함
+-->

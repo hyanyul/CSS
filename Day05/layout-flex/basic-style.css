@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* vw, vh: 뷰포트 단위 */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.item{
+    display: flex;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stucture</title>
+    <style>
+        li{
+            list-style: none;   /* 인라인 형태로 바뀜 */
+            float: left;
+            padding: 15px;  /* 상하 간격 조정 */
+        }
+        li:nth-child(2n){
+            background-color: #14398a;
+            color:white;
+        }
+        li:nth-child(2n+1){
+            background-color: black;
+            color: white;
+        }
+        li:first-child{
+            border-radius: 10px 0 0 10px;
+            /* 왼쪽 위 모서리, 오른쪽 위 모서리, 오른쪽 아래 모서리, 왼쪽 아래 모서리 */
+        }
+        li:last-child{
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>
+        <li>네번째</li>
+        <li>다섯번째</li>
+        <li>여섯번째</li>
+        <li>일곱번째</li>
+    </ul>
+</body>
+</html>
+
+<!--
+    : 가상 이벤트 - 가상 클래스
+    구조 선택자: 특정 위치에 있는 태그 선택 시 사용
+    :nth-child(수열) - 형제 관계에서 앞에서 수열번째에 해당하는 태그 선택
+    :first-child 형제 관계에서 첫번째로 등장하는 태그 선택
+    :last-child 형제 관계에서 마지막으로 등장하는 태그 선택
+
+    list-style : 블릿마커 제어
+        - 원형 블릿 마커(disc), 숫자 순서(decimal), 비어있는 원형 블릿 마커(circle)
+          사각 블릿 마커(square)
+    border-radius: 요소의 테두리를 둥글게 만듦
+        - (좌상, 우상, 우하, 좌하) / (좌상, 우상좌하, 우하) / (좌상우하, 우상좌하) / (전체)
+-->
